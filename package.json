@@ -1,0 +1,20 @@
+{
+  "name": "codeial",
+  "version": "1.0.0",
+  "description": "Social Media Web App",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "social"
+  ],
+  "author": "Sk Md Irfan",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^3.0.1",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.5"
+  }
+}
