@@ -1,0 +1,44 @@
+<link rel="stylesheet" href="/css/signup.css">
+<link rel="script" href="/js/signup.js">
+<div style="height: 100vh;" id="container">
+<div id="welcome">
+</div>
+<div style="text-align: center;  color:rgba(0, 0, 0, 0.568) ;
+font-weight: bolder;" id="asidelogin">
+    <h2>Enter your Login Details</h2>
+    <form id="above" class="formdata" method="POST" action="/users/create-session">
+        <input type="email" name="email" placeholder="Enter Your email"><br><br>
+        <input type="password" name="password" placeholder="Enter your password"><br><br>
+        <button id="but" type="submit">
+            Login
+        </button>
+    </form>
+<form class="formdata" id="bellowlogin" method="POST" action="/users/create">
+        <h2><b> Create a new account </b></h2>
+        <h4>It's quick and easy.</h4>
+        <input type="text" name="first_name" placeholder="First Name">
+        <input type="text" name="surname" placeholder=" Surname"><br><br>
+        <input type="email" name="email" placeholder="Mobile number or email address"><br><br>
+        <input type="password" name="password" placeholder="New password"><br><br>
+        <label>Birthday</label><br><br>
+        <select id="date" name="date" form="birthday">
+            <% for (let i=1; i<=30 ; i++) { %> 
+                <option value="<%= i %>"><%=i %></option>
+             <% } %>
+        </select>
+        <select id="date" name="month" form="birthday">
+            <% for (let i of month) { %> 
+                <option value="<%= i %>"><%=i %></option>
+             <% } %>
+        </select>
+        <select id="date" name="year" form="birthday">
+            <% for (let i = 1905 ; i <= 2020; i++) { %> 
+                <option value="<%= i %>"><%=i %></option>
+             <% } %>
+        </select><br><br>
+        <button id="but2" type="submit">
+            Signup
+        </button>
+    </form>
+</div>
+</div>

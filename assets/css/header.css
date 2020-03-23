@@ -1,0 +1,20 @@
+#head {
+    height: 10vh;
+    width: 100%;
+   background-image: linear-gradient(to right,#d19bd6,#d685cb41,#c07fb0);
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+}
+
+#header {
+    justify-content: center;
+}
+
+#containerhead {
+    width: 80vw;
+    margin-left: 10vw;
+    color:rgba(247, 247, 247, 0.884);
+    font-family: helvetica;
+    
+}
