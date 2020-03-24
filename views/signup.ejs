@@ -1,5 +1,4 @@
 <link rel="stylesheet" href="/css/signup.css">
-<link rel="script" href="/js/signup.js">
 <div style="height: 100vh;" id="container">
 <div id="welcome">
 </div>
@@ -7,21 +6,29 @@
 font-weight: bolder;" id="asidelogin">
     <h2>Enter your Login Details</h2>
     <form id="above" class="formdata" method="POST" action="/users/create-session">
-        <input type="email" name="email" placeholder="Enter Your email"><br><br>
-        <input type="password" name="password" placeholder="Enter your password"><br><br>
+        <input type="email" name="sign_email" placeholder="Enter Your email"><br><br>
+        <input type="password" name="sign_password" placeholder="Enter your password"><br><br>
         <button id="but" type="submit">
             Login
         </button>
     </form>
-<form class="formdata" id="bellowlogin" method="POST" action="/users/create">
+<form class="formdata" id="bellowlogin" action="/users/create" method="POST"  >
         <h2><b> Create a new account </b></h2>
         <h4>It's quick and easy.</h4>
-        <input type="text" name="first_name" placeholder="First Name">
-        <input type="text" name="surname" placeholder=" Surname"><br><br>
-        <input type="email" name="email" placeholder="Mobile number or email address"><br><br>
-        <input type="password" name="password" placeholder="New password"><br><br>
-        <input type="password" name="confirm_password" placeholder="Confirm password"><br><br>
-        <label>Birthday</label><br><br>
+
+        <!-- <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <input type="password" name="password" placeholder="Password" required>
+        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+        <input type="submit" value="Sign Up"> -->
+
+
+        <input type="text" name="first_name" placeholder="First Name" required>
+        <input type="text" name="surname" placeholder=" Surname" required><br><br>
+        <input type="email" name="email" placeholder="Mobile number or email address" required><br><br>
+        <input type="password" name="password" placeholder="New password" required><br><br>
+        <input type="password" name="confirm_password" placeholder="Confirm password" required><br><br>
+       <label>Birthday</label><br><br>
         <select id="date" name="date" form="birthday">
             <% for (let i=1; i<=30 ; i++) { %> 
                 <option value="<%= i %>"><%=i %></option>
@@ -36,10 +43,8 @@ font-weight: bolder;" id="asidelogin">
             <% for (let i = 1905 ; i <= 2020; i++) { %> 
                 <option value="<%= i %>"><%=i %></option>
              <% } %>
-        </select><br><br>
-        <button id="but2" type="submit">
-            Signup
-        </button>
+        </select><br><br> 
+        <input id="but2" type="submit" value="Signup">
     </form>
 </div>
 </div>
