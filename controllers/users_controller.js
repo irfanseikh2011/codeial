@@ -1,11 +1,13 @@
 const User = require('../models/user');
 
 
-module.exports.profile = function(req,res){
-    res.render('user_profile',{
+module.exports.profile = function(req, res){
+    return res.render('user_profile', {
         title: 'User Profile'
-    });
-};
+        user:
+    })
+}
+
 
 //variable to contain all the months
 var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
@@ -47,6 +49,6 @@ module.exports.create = function(req, res){
 
 
 //to create the session of the user
-module.exports.createSession = function(req,res){
-    
+module.exports.createSession = function(req, res){
+    return res.redirect('/users/profile');
 }
