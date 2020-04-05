@@ -8,19 +8,22 @@ module.exports.profile = function(req, res){
 }
 
 
-//variable to contain all the months
-var month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+// render the sign up page
+module.exports.signUp = function(req, res){
+    return res.render('user_sign_up', {
+        title: "Codeial | Sign Up"
+    })
+}
 
 
-//module to render the signup page
-module.exports.signUp = function(req,res){
-    return res.render('signup',{
-        title: 'Codeial - Login or Signup',
-        month : month
-    });
-};
+// render the sign in page
+module.exports.signIn = function(req, res){
+    return res.render('user_sign_in', {
+        title: "Codeial | Sign In"
+    })
+}
 
-//get the signup details
+// get the sign up data
 module.exports.create = function(req, res){
     if (req.body.password != req.body.confirm_password){
         return res.redirect('back');
@@ -31,13 +34,9 @@ module.exports.create = function(req, res){
 
         if (!user){
             User.create(req.body, function(err, user){
-                if(err){
-                    
-                    console.log('error in creating user while signing up'); 
-                   return;
-                }
+                if(err){console.log('error in creating user while signing up'); return}
 
-                return res.redirect('/users/profile');
+                return res.redirect('/users/sign-in');
             })
         }else{
             return res.redirect('back');
@@ -47,7 +46,7 @@ module.exports.create = function(req, res){
 }
 
 
-//to create the session of the user
+// sign in and create a session for the user
 module.exports.createSession = function(req, res){
-    return res.redirect('/users/profile');
+    return res.redirect('/');
 }
