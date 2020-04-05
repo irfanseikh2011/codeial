@@ -47,6 +47,6 @@ module.exports.create = function(req, res){
 
 
 //to create the session of the user
-// module.exports.createSession = function(req,res){
+module.exports.createSession = function(req,res){
     
-// }
+}
