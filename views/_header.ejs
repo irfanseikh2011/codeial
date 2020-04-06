@@ -1,7 +1,20 @@
 <link rel="stylesheet" href="/css/header.css">
 <div id="head">
     <div id="containerhead">
-        <h1 id="title">Codeial</h1>
+        <h1>Codeial</h1>
     </div>
+    <div id ="sign"> 
+        <ul>
+            <% if(locals.user) { %>
+                <li><a href="/users/profile"><%= user.first_name %></a></li>
+                <li><a href="/users/sign-out">Sign Out</a></li>
+            <% } else { %>
+                <li><a href="/users/sign-in">Sign In</a></li>
+                <li><a href="/users/sign-up">Sign Up</a></li>
+            <%  } %>
+        
+            </ul>
+    </div>
+  
  
 </div>
