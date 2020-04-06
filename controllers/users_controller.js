@@ -8,16 +8,37 @@ module.exports.profile = function(req, res){
 }
 
 
+module.exports.error404 = function(req, res){
+    return res.render('error404', {
+        title: 'Error 404'
+    })
+}
+
+
+const month = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"];
+
 // render the sign up page
 module.exports.signUp = function(req, res){
-    return res.render('user_sign_up', {
-        title: "Codeial | Sign Up"
+    if(req.isAuthenticated())
+    {
+       return res.redirect('/users/profile');
+    }
+
+
+    return res.render('signup', {
+        title: "Codeial | Sign Up",
+        month: month
     })
 }
 
 
 // render the sign in page
 module.exports.signIn = function(req, res){
+    if(req.isAuthenticated())
+    {
+      return  res.redirect('/users/profile');
+    }
+
     return res.render('user_sign_in', {
         title: "Codeial | Sign In"
     })
