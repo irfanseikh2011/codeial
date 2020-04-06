@@ -1,0 +1,47 @@
+#head {
+    height: 8vh;
+    width: 100%;
+   background-image: linear-gradient(to right,#03a9fc,#51bbf0,#399bcc);
+   display: flex;
+    flex-direction: row;
+    align-items: center;
+
+  
+}
+
+
+#containerhead {
+    width: 80vw;
+    margin-left: 10vw;
+    color:rgba(247, 247, 247, 0.884);
+    font-family: helvetica;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+
+    :hover{
+        transition: 0.2s color ease-in-out;
+        color: #426475;
+
+    }
+
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-family: Helvetica;
+}
+
+
+#sign {
+    display: flex;
+    flex-direction: row;
+    
+    li {
+        margin-left: 2vw;
+        list-style: none;
+    }
+  
+}

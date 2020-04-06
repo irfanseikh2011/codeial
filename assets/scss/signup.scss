@@ -1,0 +1,90 @@
+.formdata {
+    margin-top: 5vh;
+}
+
+.formdata input {
+    width: 15vw;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: helvetica;
+}
+
+::-webkit-input-placeholder { 
+    color:rgba(0, 0, 0, 0.568) ;
+    text-align: center;
+  }
+
+#but {
+    border: none;
+    background-color: rgba(230, 59, 59, 0.685);
+    color: aliceblue;
+    padding: 5px;
+    border-radius: 3px;
+    font-family: helvetica;
+}
+
+#but2 {
+    border: none;
+    background-color: rgba(230, 59, 59, 0.685);
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-family: helvetica;
+}
+
+#welcome {
+    width: 60vw;
+    height: 100vh;
+    background-image: linear-gradient(to right,#e5cee7,#ecdfead3,#ebbddf);
+    background-image: url("/images/fb.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    
+    
+
+}
+
+#asidelogin{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 40vw;
+    margin-left: -1px;
+    background-image: linear-gradient(to right,#e5cee7,#ecdfead3,#ebbddf);
+    font-family: helvetica;
+}
+
+#container {
+    display: flex;
+    flex-direction: row;
+    margin-top: -1px;
+    overflow: hidden;
+}
+
+#above {
+        text-align: center;
+}
+
+#bellowlogin {
+    text-align: start;
+    margin-left: 5vw;
+}
+
+#bellowlogin h4 {
+    font-weight: 400;
+}
+
+#date {
+    padding: 4px;
+}
+
+#bellowlogin label {
+    font-family: helvetica;
+    color:rgba(0, 0, 0, 0.568) ;
+    font-weight: bolder;
+}

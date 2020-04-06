@@ -1,13 +1,10 @@
 #foot {
-   
-    height: 15vh;
-    width: 100%;
-    /* position: relative; */
-   left: 0;
-   bottom: 0;
-   color: white;
-   text-align: center;
-   background-image: linear-gradient(to right,#d19bd6,#d685cb41,#c07fb0);
-   overflow: hidden;
-    
-}
+  height: 15vh;
+  width: 100%;
+  /* position: relative; */
+  left: 0;
+  bottom: 0;
+  color: white;
+  text-align: center;
+  background-image: linear-gradient(to right, #55788a, #4f7182, #426475);
+  overflow: hidden; }
