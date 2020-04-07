@@ -1,18 +1,23 @@
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+
 #head {
     height: 8vh;
-    width: 100%;
    background-image: linear-gradient(to right,#03a9fc,#51bbf0,#399bcc);
    display: flex;
     flex-direction: row;
     align-items: center;
-
   
 }
 
 
 #containerhead {
-    width: 80vw;
-    margin-left: 10vw;
+    width: 90vw;
+    margin-left: 5vw;
     color:rgba(247, 247, 247, 0.884);
     font-family: helvetica;
     display: flex;

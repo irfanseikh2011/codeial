@@ -1,9 +1,6 @@
 #foot {
-  height: 15vh;
-  width: 100%;
-  /* position: relative; */
-  left: 0;
-  bottom: 0;
+  height: 12vh;
+  width: 100vw;
   color: white;
   text-align: center;
   font-family: Helvetica;
