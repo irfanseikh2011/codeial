@@ -1,12 +1,22 @@
+main {
+  background-image: linear-gradient(to right, #d3f2f2, #dff5f5, #e1f2f2); }
+
 #container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 100vh;
-  width: 100vw;
-  background-image: linear-gradient(to right, #d3f2f2, #dff5f5, #e1f2f2);
+  height: 100%;
+  width: 90vw;
+  margin-left: 4vw;
   color: #2d2e2e;
   font-family: helvetica; }
+
+.comments {
+  background-color: white;
+  padding: 3vh 3vw;
+  list-style: none;
+  border: 1px solid #c3c9c9;
+  border-radius: 5px; }
 
 #but2 {
   border: none;

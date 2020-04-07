@@ -5,4 +5,5 @@ body {
   flex-direction: column;
   width: 100vw; }
   body #layout_main {
-    height: 100vh; }
+    height: 100%;
+    padding-bottom: 2vh; }
