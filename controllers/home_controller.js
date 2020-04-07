@@ -1,3 +1,6 @@
+const Post = require('../models/posts');
+
+
 module.exports.home = function(req, res){
 
     if(!req.isAuthenticated())
@@ -6,10 +9,11 @@ module.exports.home = function(req, res){
     }
 
 
-    console.log(req.cookies);
-    res.cookie('user_id', 25);
+    // console.log(req.cookies);
+    // res.cookie('user_id', 25);
     return res.render('home', {
-        title: "Home"
+        title: "Codeial | Home",
+        posts : posts
     });
 }
 
