@@ -1,0 +1,45 @@
+#main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url("/images/dp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+
+    h1 {
+        color: white;
+        font-family: Helvetica;
+    }
+}
+
+
+
+.formdata {
+    margin-top: 5vh;
+    .empass {
+    width: 15vw;
+    background-color: rgb(230, 230, 230);
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: helvetica;
+}
+}
+
+::-webkit-input-placeholder { 
+    color:rgba(0, 0, 0, 0.568) ;
+    text-align: center;
+  }
+
+  #but2 {
+    border: none;
+    background-color: #3e854c;
+    color: aliceblue;
+    padding: 10px 15px;
+    border-radius: 3px;
+    font-family: helvetica;
+    margin-top: 2vh; margin-left: 12vw; 
+}
+
