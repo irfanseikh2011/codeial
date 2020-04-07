@@ -6,7 +6,7 @@
   background-image: url("/images/dp.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%; }
+  height: 100vh; }
   #main h1 {
     color: white;
     font-family: Helvetica; }
