@@ -13,12 +13,13 @@ main {
 
 .comments {
   background-color: white;
-  padding: 3vh 3vw;
+  padding: 1vh 3vw;
   list-style: none;
+  margin-bottom: 1vh;
   border: 1px solid #c3c9c9;
   border-radius: 5px; }
 
-#but2 {
+.but2 {
   border: none;
   background-color: #3e854c;
   color: aliceblue;
@@ -32,3 +33,8 @@ textarea {
   border: 3px solid #c3c9c9;
   overflow: auto;
   resize: none; }
+
+.post-comment .type {
+  border: 3px solid #c3c9c9;
+  padding: 1vh 8vw;
+  border-radius: 5px; }

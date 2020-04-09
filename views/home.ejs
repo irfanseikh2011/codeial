@@ -6,7 +6,7 @@
     <h2>Posts</h2>
     <form action="/posts/create" id="new-post-form" method="POST">
         <textarea placeholder="Type here.." name="content" cols="40" rows="5"></textarea><br>
-        <input id="but2"  type="submit" value="Post">
+        <input class="but2"  type="submit" value="Post">
     </form>
 </section>
 
@@ -14,16 +14,41 @@
 <div id ="posts-list-container">
     <ul>
         <% for(post of posts) { %>
+            <li  class="comments">
             <p>
-                <li  class="comments">
                    <b><%= post.content %></b><br>
                     <small>
                        - <%= post.user.first_name %>
                     </small>
-                 </li>
-
             </p>
-        
+            <div class="post-comment">
+                <% if (locals.user) { %>
+                <form action="/comments/create" method="POST">
+                    <input class="type" type="text" name="content" placeholder="Type here to comment..">
+                    <input type="hidden" name="post" value="<%=post._id %>">
+                    <input class="but2" type="submit" value="Add Comment">
+                </form>
+            <% } %>
+                <div class="post-comments-list">
+                    <ul id="post-comments-<%= post._d %>">
+                        <% flag = 0 %>
+                        <% for (comment of post.comments) { %>
+                            <% if(post.comments.length >0 && flag==0){ %>
+                                <h3><u>Comments</u></h3>
+                                <% flag++ %>
+                            <% } %>
+                        <p>
+                            <%= comment.content %>
+                            <br>
+                            <small>
+                                - <%= comment.user.first_name %>
+                            </small>
+                        </p>
+                        <%  } %>
+                    </ul>
+                </div>
+            </div>
+        </li>
         <%  } %>
     </ul>
 </div>
