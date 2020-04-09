@@ -36,5 +36,6 @@ textarea {
 
 .post-comment .type {
   border: 3px solid #c3c9c9;
-  padding: 1vh 8vw;
+  width: 280px;
+  height: 40px;
   border-radius: 5px; }
