@@ -18,3 +18,7 @@ module.exports.create = function(req,res){
         }
     });
 }
+
+module.exports.destroyComment = function(req,res){
+    
+}
