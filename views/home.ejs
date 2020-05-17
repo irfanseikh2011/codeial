@@ -49,6 +49,11 @@
                             <small>
                                 - <%= comment.user.first_name %>
                             </small>
+                            <% if ((locals.user && locals.user.id == comment.user.id) || (locals.user && locals.user.id == post.user.id)){ %>
+                                <small>
+                                    <a style="color: black; padding: 2px; background-color: rgb(235, 106, 106);" href="/comments/destroy/<%= comment.id %>">X</a>
+                                </small>
+                                <% } %>
                         </p>
                         <%  } %>
                     </ul>
