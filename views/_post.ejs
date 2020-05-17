@@ -1,0 +1,15 @@
+<% if (locals.user && locals.user.id == post.user.id) { %>
+    <small>
+        <a style="color: black; padding: 2px; background-color: rgb(235, 106, 106);" href="posts/destroy/<%= post.id %>">X</a>
+    </small>
+    <% } %>
+    <li  class="comments">
+    <p>
+        
+           <b><%= post.content %></b><br>
+            <small>
+               - <%= post.user.first_name %>
+            </small>
+    </p>
+    <%- include('_comments') -%>
+</li>
