@@ -4,3 +4,5 @@ A clone website of Facebook, it has the basic functionality of registering and l
 
 # DEMO
 
+https://user-images.githubusercontent.com/38558296/133962338-7c1b51e5-6ce0-4e5d-ab77-798b2e902cce.mp4
+
